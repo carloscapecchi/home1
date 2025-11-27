@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Carlos Capecchi | Psicologia y Sexualidad</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+
+    <body>
+        <!-- MENU -->
+        <header>
+            <div class="menu-container">
+                <a class="menu-title" href="./index.html">CARLOS CAPECCHI</a>
+                <!-- ICONO HAMBURGUESA -->
+                <div id="hamburger" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="close-menu" class="close-menu">✕</div>
+                <nav class="menu-buttons" id="mobile-menu">
+                    <a class="single-menu-button" href="./services.html">SERVICIOS</a>
+                    <a class="single-menu-button" href="./about.html">ACERCA DE</a>
+                    <a class="single-menu-button" href="./blog.html">BLOG</a>
+                    <a class="single-menu-button" href="./contact.html">CONTACTO</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>Ponte en Contacto</h1>
+            <p>Dar el primer paso para una terapia puede ser desafiante. Estoy aquí para responder a tus preguntas e inquietudes y ayudarte a iniciar este viaje hacia le bienestar. Comuníquese hoy para programar una cita.</p>
+        </main>
+
+        <section id="containers">
+            <div class="main-container">
+                <div>
+                    <form class="form-container" action="https://formspree.io/f/mzzkrrdy" method="post">
+                        <input type="hidden" name="_redirect" value="https://www.google.com">
+                        <fieldset>
+                            <legend>Envía tu mensaje</legend>
+                            <div class="fields-container">
+                                <div class="field">
+                                    <label>Nombre Completo</label>
+                                    <input class="input-text" type="text" placeholder="Tu nombre">
+                                </div>
+                                <div class="field">
+                                    <label>Dirección Email</label>
+                                    <input class="input-text" type="email" placeholder="carlos@ejemplo.com">
+                                </div>
+                                <div class="field">
+                                    <label>Número de Teléfono</label>
+                                    <input class="input-text" type="tel" placeholder="099-909-9090">
+                                </div>
+                                <div class="field">
+                                    <label>Servicio de Interés</label>
+                                    <select class="input-text" name="miSelect" id="miSelect">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="opcion1">Psicoterapia Individual</option>
+                                        <option value="opcion2">Terapia de Pareja</option>
+                                        <option value="opcion3">Terapia Sexual</option>
+                                        <option value="opcion4">Evaluación Psicológica</option>
+                                        <option value="opcion5">Psicodiagnóstico Infantil y Juvenil</option>
+                                        <option value="opcion6">Asesoramiento Empresarial</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label>Mensaje</label>
+                                    <textarea class="input-text" placeholder="Cuéntame qué te trae por aquí y cómo puedo ayudarte..."></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2L15 22L11 13L2 9L22 2Z"></path></svg>Enviar</button> 
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="right-containers">
+                    <div class="small-container">
+                        <h2>Información de Contacto</h2>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="#2d4c53" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            </svg>(+593) 93-928-3303</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d4c53"
+                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" /></svg>carloscapecchi@gmail.com</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d4c53"
+                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>Guayaquil, Ecuador</p>
+                    </div>
+                    <div class="small-container">
+                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="#2d4c53" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 12h3.5" /><path d="M12 7v5" /></svg>Horarios de atención</h2>
+                        <div class="hours-container">
+                            <div>
+                                <p>Lunes - Viernes</p>
+                                <p>Sábados</p>
+                                <p>Domingos</p>
+                            </div>
+                            <div>
+                                <p>9:00 AM - 7:00 PM</p>
+                                <p>Con previa cita</p>
+                                <p>Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-container emergency">
+                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="#760202" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                        <path d="M6 10h4m-2 -2v4" /></svg>Soporte de Emergencia</h2>
+                        <p>Si estás experimentando una emergencia en salud mental, por favor comunícate con los números de emergencia a nivel nacional.</p>
+                        <p><span style="color: rgb(118, 2, 2); font-weight: 450;"> ECU 911 | Cruz Roja 131 | MSP 171</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <div id="map"></div>
+        </section>
+        
+
+        <!-- FOOTER SECTION -->
+        <section id="footer">
+            <div class="flex-footer">
+                <div class="links">
+                    <p class="footer-title">Enlaces Rápidos</p>
+                    <a class="footer-links" href="./index.html">Inicio</a>
+                    <a class="footer-links" href="./services.html">Servicios</a>
+                    <a class="footer-links" href="./about.html">Acerca de</a>
+                    <a class="footer-links" href="./blog.html">Blog</a>
+                    <a class="footer-links" href="./contact.html">Contacto</a>
+                </div>
+                <div class="footer-services">
+                    <p class="footer-title">Servicios</p>
+                    <p class="single">Psicoterapia Individual</p>
+                    <p class="single">Terapia de Pareja</p>
+                    <p class="single">Terapia Sexual</p>
+                    <p class="single">Evaluación Psicológica</p>
+                    <p class="single">Psicodiagnóstico Infantil y Juvenil</p>
+                    <p class="single">Asesoramiento Empresarial</p>
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-title">Contacto</p>
+                    <a class="footer-icon" href="tel:+5939283303"><img src="./images/general_icons/clear-phone.png">(+593) 93 928 3303</a>
+                    <a class="footer-icon" href="mailto:carloscapecchi@gmail.com"><img src="./images/general_icons/clear-mail.png">carloscapecchi@gmail.com</a>
+                    <a class="footer-icon" href="https://www.google.com/maps/place/Guayaquil/@-2.1521492,-80.1449158,11z/data=!3m1!4b1!4m6!3m5!1s0x902d13cbe855805f:0x8015a492f4fca473!8m2!3d-2.1891341!4d-79.8899031!16zL20vMDFma250?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"><img src="./images/general_icons/clear-location.png">Guayaquil 090510, Ecuador</a>
+                </div>  
+            </div>
+            <hr />
+            <p class="copyright">© 2025 Carlos Capecchi. Todos los derechos reservados.</p> 
+        </section>
+
+        <!-- WHATSAPP BUTTON -->
+        <section id="whatsapp">
+            <a href="https://wa.me/593939283303">
+                <img class="whatsapp-icon" src="./images/whatsapp.png">
+            </a>
+        </section>
+
+
+
+        <style>
+             body {
+                margin: 0;
+                padding: 0;
+                font-family: "Libre Franklin";
+                font-weight: 300;
+                background-color: #fcfaed;
+                color: #2d4c53;
+            }
+            /* MENU */
+            .menu-container {
+                display: flex;
+                justify-content: space-around;
+                gap: 800px;
+                align-items: center;
+                height: calc(.30rem * 16);
+                padding: 0 10px;
+                margin: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+                background: white;
+                font-weight: bold;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+            }
+            .menu-title, 
+            .single-menu-button {
+                text-decoration: none;
+                color: #2d4c53;
+                transition: all .25s ease;
+            }
+            .menu-title:hover, 
+            .single-menu-button:hover {
+                color: #a1d2cc;
+            }
+            .menu-buttons {
+                display: flex;
+                gap: 25px;
+            }
+            .hamburger,
+            .close-menu {
+                display: none;
+            }
+            /* HAMBURGUER */ 
+            .hamburger {
+                width: 30px;
+                cursor: pointer;
+            }
+            .hamburger span {
+                display: block;
+                height: 3px;
+                background-color: #2d4c53;
+                margin: 6px 0;
+                border-radius: 2px;
+            }
+            /* X BUTTON TO CLOSE MENU */
+            .close-menu {
+                font-size: 2rem;
+                cursor: pointer;
+                color: #2d4c53;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 3;
+            }
+            /* RESPONSIVE MENU */
+            @media (max-width: 768px) {
+                .menu-buttons {
+                    display: none;
+                    position: fixed;
+                    background: white;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 70%;
+                    flex-direction: column;
+                    padding: 80px 20px; /* Espacio para la X */
+                    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+                }
+                .hamburger {
+                    display: block;
+                }
+                .menu-open .close-menu {
+                    display: block;
+                }
+                .menu-open #mobile-menu {
+                    display: flex;
+                }
+            }
+            /* MAIN */
+            main {
+                text-align: center;
+                padding: 0 14rem;
+            }
+            h1 {
+                font-family: "Fira Sans Condensed";
+                color: #2d4c53;
+                font-size: 2rem;
+                margin-top: 9rem;
+                margin-bottom: 0;
+            }
+            main p {
+                font-size: 14px;
+                padding: 0 160px;
+            }
+            .main-container {
+                display: flex;
+                justify-content: center;
+                margin: 50px 60px 0 60px;
+                padding: 0;
+                gap: 30px;
+            }
+            /* FORM SECTION */
+            .form-container {
+                background-color: white;
+                width: 800px;
+                padding: 20px;
+                border-radius: 12px;
+                border: 1px solid #e5e7dd;
+            }
+            .form-container fieldset {
+                border: none;
+            }
+            .form-container legend {
+                font-family: inherit;
+                color: #2d4c53;
+                font-size: 16px;
+                font-weight: 450;
+                margin-bottom: 25px;
+            }
+            .fields-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 40px;
+                grid-template-rows: auto auto 210px;
+            }
+            .field {
+                margin-bottom: 25px;
+            }
+            .field label {
+                color: #2d4c53;
+                font-weight: 450;
+                font-size: 14px;
+                margin-bottom: 9px;
+                display: block;
+            }
+            .input-text {
+                width: 100%;
+                border: 1px solid #e5e7dd;
+                border-radius: 6px;
+                padding: 10px 0 10px 8px;
+            }
+            .send {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;   
+                gap: 6px;
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: 450;              
+                border: none;
+                background: #2d4c53;
+                color: white;
+                padding: 7px 14px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.25s ease;
+                margin-top: 16px;
+            }
+            .send:hover {
+                background-color: #5c96a2;
+            }
+            .send svg {
+                display: block;        
+            }
+            .field textarea {
+                height: 160px;
+            }
+            .field:nth-child(5) {
+                grid-column: 1 / 3;
+            }
+            textarea {
+                font-family: inherit;
+            }
+            /* CONTAINERS SECTION */
+            .small-container {
+                background-color: white;
+                border: 1px solid #e5e7dd;
+                border-radius: 12px;
+                margin-bottom: 30px;
+                width: 300px;
+                padding: 5px 10px;
+            }
+            .small-container h2 {
+                font-family: "Fira Sans Condensed";
+                margin-bottom: 0;
+                font-size: 17px;
+                color: #2d4c53;
+                font-weight: 450;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .small-container p {
+                font-size: 13px;
+                color: #2d4c53;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .emergency {
+                background-color: #fef2f2;
+                border: 1px solid #760202;
+            }
+            .emergency h2 {
+                color: #760202;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .hours-container {
+                display: flex;
+                justify-content: space-around;
+            }
+            /* MAP */
+            .location {
+                margin: 50px 164px;
+                padding-top: 0;
+            }
+            #map {
+                height: 400px;
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid #e5e7dd;
+                z-index: 3;
+            }
+            /* FOOTER SECTION */
+            #footer {
+                background-color: #101727;
+                padding: 3rem 15rem;
+            }
+            .flex-footer {
+                display: flex;
+                justify-content: space-around;
+            }
+            .links {
+                display: flex;
+                flex-direction: column;
+            }
+            .footer-contact img {
+                width: 20px;
+            }
+            .footer-title {
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .footer-links, 
+            .footer-icon,  
+            .single {
+                color: #616976;
+                font-size: .8rem;
+            }
+            .footer-icon {
+                display: flex;
+                align-content: center;
+                gap: 8px;
+                text-decoration: none;
+                margin-bottom: 0.4rem;
+            }
+            .footer-links {
+                text-decoration: none;
+                margin-bottom: 0.4rem;
+                transition: all .3s ease;
+            }
+            .footer-links:hover {
+                color: white;
+            }
+            .single {
+                margin-bottom: 0.4rem;
+            }
+            .copyright {
+                color: #616976;
+                font-size: .8rem;
+                text-align: center;
+                margin-top: 1.3rem;
+            }
+            /* FOOTER RESPONSIVE */
+            @media (max-width: 768px) {
+                #footer {
+                    margin: 0;
+                    padding: 10px;
+                }
+                .flex-footer {
+                    display: block;
+                    justify-content: space-between;
+                }
+            }
+            /* BOTÓN DE WHATSAPP */
+            #whatsapp a {
+                background: none;
+                position: fixed;
+                top: 85%;
+                right: 1%;
+            }
+            .whatsapp-icon {
+                height: 50px;
+                width: 50px;
+                z-index: 10;
+            }           
+        </style>
+
+        <script>
+            const lat = -2.1574252;
+            const lng = -79.9051;
+
+            const map = L.map("map").setView([lat, lng], 13);
+
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: "&copy; OpenStreetMap contributors",
+            }).addTo(map);
+
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const mapsURL = isIOS
+                ? `http://maps.apple.com/?daddr=${lat},${lng}`
+                : `https://www.google.com/maps?q=${lat},${lng}`;
+
+            L.marker([lat, lng])
+                .addTo(map)
+                .bindPopup(`
+                <b style="font-weight: bold;">Consultorio</b><br>
+                C. 15 N-O 208, Guayaquil<br>
+                <a href="${mapsURL}" target="_blank" 
+                    style="color:#0077cc; text-decoration:underline;">
+                    Cómo llegar
+                </a>
+                `)
+                .openPopup();
+        </script>
+
+    </body>
+</html>

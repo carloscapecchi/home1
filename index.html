@@ -3,124 +3,130 @@
     <head>
         <meta charset="UTF-8">
         <title>Carlos Capecchi | Psicologia y Sexualidad</title>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     </head>
 
     <body>
+        <!-- MENU -->
         <header>
-            <section id="menu">
-                <div class="name">
-                    <a class="name-title" href="./index.html">CARLOS CAPECCHI</a>
+            <div class="menu-container">
+                <a class="menu-title" href="./index.html">CARLOS CAPECCHI</a>
+                <!-- ICONO HAMBURGUESA -->
+                <div id="hamburger" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="menu-list">
-                    <a class="menu-text" href="./services.html">SERVICIOS</a>
-                    <a class="menu-text" href="./about.html">ACERCA DE</a>
-                    <a class="menu-text" href="./blog.html">BLOG</a>
-                    <a class="menu-text-final" href="./contact.html">CONTACTO</a>
-                </div>
-            </section>
+                <div id="close-menu" class="close-menu">✕</div>
+                <nav class="menu-buttons" id="mobile-menu">
+                    <a class="single-menu-button" href="./services.html">SERVICIOS</a>
+                    <a class="single-menu-button" href="./about.html">ACERCA DE</a>
+                    <a class="single-menu-button" href="./blog.html">BLOG</a>
+                    <a class="single-menu-button" href="./contact.html">CONTACTO</a>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <section id="main-landing">
-                <div class="main-text-container">
-                    <h1>Acompañamiento con propósito: Claridad, bienestar y transformación emocional y relacional</h1>
-                    <p>Soy Carlos Capecchi, psicólogo clínico, sexólogo y psicoterapeuta. Acompaño procesos personales, de pareja y familiares desde una mirada integradora que considera la mente, las emociones y la sexualidad como partes esenciales de la experiencia humana.</p>
-                    <a class="cta-land-left" href="./contact.html">Agenda una cita</a>
-                    <a class="cta-land-right" href="./services.html">Explora mis servicios</a>
-                </div>
-            </section>
-        </main>
-
-        <section id="certified">
-            <div class="certified-box">
-                <img src="./images/general_icons/badge.png" alt="badge">
-                <h2>10+ Años de Experiencia</h2>
-                <p>Extensa y sólida trayectoria profesional en el área de salud mental y sexual</p>
-            </div>
-
-            <div class="certified-box">
-                <img src="./images/general_icons/shield.png" alt="safe-shield">
-                <h2>Confidencialidad y Seguridad</h2>
-                <p>Un espacio seguro y confidencial en el que tu privacidad es mi prioridad</p>
-            </div>
-
-            <div class="certified-box">
-                <img src="./images/general_icons/time.png" alt="clock">
-                <h2>Horario Flexible</h2>
-                <p>Agendamiento conveniente que se ajusta a tu estilo de vida</p>
+        <!-- MAIN -->
+        <section id="main-landing">
+            <div class="landing">
+                <h1>Acompañamiento con propósito. Claridad, bienestar y transformación emocional y relacional</h1>
+                <p>Soy Carlos Capecchi, psicólogo clínico, sexólogo y psicoterapeuta. Acompaño procesos personales, de pareja y familiares desde una mirada integradora que considera la mente, las emociones y la sexualidad como partes esenciales de la experiencia humana.</p>
+                <a class="cta-land-left" href="./contact.html">Agenda una cita</a>
+                <a class="cta-land-right" href="./services.html">Explora mis servicios</a>
             </div>
         </section>
 
+        <!-- SPECS SECTION -->
+        <section id="specs-section">
+            <div class="specs-container">
+                <div class="specs-single">
+                    <img class="specs-icon" src="./images/general_icons/badge.png" alt="badge">
+                    <h2>10+ Años de Experiencia</h2>
+                    <p>Extensa y sólida trayectoria profesional en las áreas de salud mental y salud sexual</p>
+                </div>
+                <div class="specs-single">
+                    <img class="specs-icon" src="./images/general_icons/shield.png" alt="shield">
+                    <h2>Confidencialidad y Seguridad</h2>
+                    <p>Espacio seguro y confidencial en el que tu privacidad y cuidado, son mi prioridad</p>
+                </div>
+                <div class="specs-single">
+                    <img class="specs-icon" src="./images/general_icons/time.png" alt="clock">
+                    <h2>Horario Flexible</h2>
+                    <p>Agendamiento conveniente que se ajusta a tus necesidades y estilo de vida</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
         <section id="services">
-            <h3>Oferta de Servicios</h3>
-            <p class="services-subtitle">Servicios psicológicos y sexológicos integrales, adaptados a tus necesidades y 
-                objetivos únicos</p>
+            <h2 class="services-title">Servicios que Ofrezco</h2>
+            <p class="services-subtitle">Servicios especializados y acompañamiento adaptado a cada circustancia, necesidad u objetivo.</p>
             <div class="services-container">
-                <div class="service">
-                    <img src="./images/general_icons/person.png" alt="user">
+                <div class="single-service">
+                    <img class="service-icon" src="./images/general_icons/person.png" alt="user">
                     <h2>Psicoterapia Individual</h2>
-                    <p>Sesiones de terapia personalizadas para ayudarle a afrontar los desafíos de la vida y lograr el bienestar mental.</p>
+                    <p>Espacio para comprender lo que sientes, ordenar tu mundo interno y reencontrarte contigo mismo/a. Avanzamos a tu ritmo, con respeto y acompañamiento genuino.</p>
                 </div>
-
-                <div class="service">
-                    <img src="./images/general_icons/couple.png" alt="users">
+                <div class="single-service">
+                    <img class="service-icon" src="./images/general_icons/couple.png" alt="users">
                     <h2>Terapia de Pareja</h2>
-                    <p>Fortalezca su relación y mejore su comunicación a través de intervenciones terapéuticas en pareja.</p>
+                    <p>Un lugar para escuchar y ser escuchados/as, reconstruir la confianza y fortalecer el vínculo. Aquí pueden explorar nuevas formas de comunicarse y mirarse con mayor claridad.</p>
                 </div>
-
-                <div class="service">
-                    <img src="./images/general_icons/fire.png" alt="fire">
+                <div class="single-service">
+                    <img class="service-icon" src="./images/general_icons/fire.png" alt="fire">
                     <h2>Terapia Sexual</h2>
-                    <p>Intervención especializada en salud sexual y reproductiva, intimidad y placer en un entorno seguro y respetuoso.</p>
+                    <p>Acompañamiento profesional y seguro para comprender tus experiencias sexuales, superar bloqueos y recuperar el bienestar erótico sin juicios y en confidencialidad.</p>
                 </div>
-
-                <div class="service">
-                    <img src="./images/general_icons/list.png" alt="to-do-list">
+                <div class="single-service">
+                    <img class="service-icon" src="./images/general_icons/list.png" alt="list">
                     <h2>Evaluación Psicológica</h2>
-                    <p>Evaluaciones psicológicas integrales orientadas a la obtención de un perfil de funcionamiento mental.</p>
+                    <p>Proceso claro y sistemático, para comprender tus fortalezas, dificultades y necesidades actuales. Te ofrezco resultados útiles, explicados con lenguaje claro y orientados a ayudarte.</p>
                 </div>
-
-                <div class="service">
-                    <img src="./images/general_icons/child.png" alt="baby-face">
-                    <h2>Psicodiagnóstico Infantil</h2>
-                    <p>Proceso sistemático de valoración emocional, cognitiva y socioafectiva de niños, niñas y adolescentes.</p>
+                <div class="single-service">
+                    <img class="service-icon" src="./images/general_icons/child.png" alt="baby baby-face">
+                    <h2>Psicodiganóstico Infantil y Juvenil</h2>
+                    <p>Evaluación integral y sensible que busca comprender la historia, el contexto y las necesidades cognitivas y afectivas de niños, niñas y adolescentes en su individualidad.</p>
                 </div>
-
-                <div class="service">
-                    <img src="./images/general_icons/briefcase.png" alt="briefcase">
-                    <h2>Asesoría Organizacional</h2>
-                    <p>Servicios de orientación profesional para el desempeño laboral, clima organización, liderazgo, y otros.</p>
+                <div class="single-service">
+                    <img class="service-icon" src="./images/general_icons/briefcase.png" alt="briefcase">
+                    <h2>Asesoramiento Empresarial</h2>
+                    <p>Acompañamiento y entrenamiento para fortalecer equipos, gestionar el clima laboral, desarrollar habilidades socioemocionales y herramientas productivas dentro de tu organización.</p>
                 </div>
             </div>
-            <a class="service-btn" href="./services.html">Ver todos los servicios &rarr;</a>
+            <a class="services-button" href="./services.html">Ver todos los servicios &rarr;</a>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about">
-            <div class="about-text">
-                <p>Sobre Mi</p>
-                <p>Con más de 10 años de experiencia en psicología clínica, estoy compromteido a brindar un acomapñamiento compasivo, basado en evidencia, para ayudarle a alcanzar sus metas terapéuticas.</p>
-                <p>Mi enfoque integra distintas modalidades terapéuticas, ajustadas a las necesidades únicas de cada individuo, garantizando un camino personalizado hacia el bienestar y el crecimiento.</p>
-                <a class="about-me-btn" href="./about.html">Conoce más sobre mi &rarr;</a>
-            </div>
-            <div class="about-img">
-                <img src="./images/profile.png" alt="hombre con corona">
+            <div class="about-container">
+                <div class="about-text">
+                    <p class="title-about">Sobre Mi</p>
+                    <p>Con más de 10 años de experiencia, he integrado una sólida base teórica con una profunda comprensión humana y contemporánea de la psicología y la sexualidad. Mi práctica se sustenta en el respeto, la empatía y la convicción de que cada persona posee los recursos para transformar su propia historia.</p>
+                    <p>Trabajo desde un enfoque integrador que combina herramientas psicodinámicas y contextuales, en un acompañamiento emocional significativo. Mi objetivo es ofrecer un espacio seguro para que puedas comprenderte y transformar tu vida.</p>
+                    <a class="about-cta" href="./about.html">Conocer más &rarr;</a>
+                </div>
+                <div class="about-image">
+                    <img src="./images/profile.png" alt="profesional sentado" title="Carlos Capecchi">
+                </div> 
             </div>
         </section>
 
+        <!-- CTA FINAL -->
         <section id="final">
-            <p>¿Listp(a) para dar el primer paso? Agenda tu consulta hoy</p>
-            <a class="final-btn" href="./contact.html">Contáctame</a>
+            <p>¿Listo(a) para dar el primer paso? Agenda tu consulta hoy</p>
+            <a class="final-cta" href="./contact.html">Contáctame</a>
         </section>
 
+        <!-- FOOTER SECTION -->
         <section id="footer">
             <div class="flex-footer">
                 <div class="links">
-                    <p class="footer-title">Links Rápidos</p>
+                    <p class="footer-title">Enlaces Rápidos</p>
                     <a class="footer-links" href="./index.html">Inicio</a>
                     <a class="footer-links" href="./services.html">Servicios</a>
                     <a class="footer-links" href="./about.html">Acerca de</a>
@@ -133,8 +139,8 @@
                     <p class="single">Terapia de Pareja</p>
                     <p class="single">Terapia Sexual</p>
                     <p class="single">Evaluación Psicológica</p>
-                    <p class="single">Psicodiagnóstico Infantil</p>
-                    <p class="single">Asesoría Organizacional</p>
+                    <p class="single">Psicodiagnóstico Infantil y Juvenil</p>
+                    <p class="single">Asesoramiento Empresarial</p>
                 </div>
                 <div class="footer-contact">
                     <p class="footer-title">Contacto</p>
@@ -147,9 +153,12 @@
             <p class="copyright">© 2025 Carlos Capecchi. Todos los derechos reservados.</p> 
         </section>
 
-
-
-
+        <!-- WHATSAPP BUTTON -->
+        <section id="whatsapp">
+            <a href="https://wa.me/593939283303">
+                <img class="whatsapp-icon" src="./images/whatsapp.png">
+            </a>
+        </section>
 
         <style>
             body {
@@ -158,54 +167,90 @@
                 font-family: "Libre Franklin";
                 font-weight: 300;
             }
-            /* HEADER - MENU */
-            #menu {
+            /* MENU */
+            .menu-container {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
+                gap: 800px;
                 align-items: center;
                 height: calc(.30rem * 16);
-                padding: 0 40px;
+                padding: 0 10px;
+                margin: 0;
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
                 z-index: 999;
-                background: rgba(255, 255, 255, 0.578);
-                backdrop-filter: blur(8px);
+                background: white;
+                font-weight: bold;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
             }
-            .name-title {
-                color: #2d4c53;
-                font-size: 1.1rem;
+            .menu-title, 
+            .single-menu-button {
                 text-decoration: none;
-                font-weight: 700;
-                transition: all 0.3s ease;
-                display: inline-block;
-                text-shadow: 2px 2px 4px rgba(146, 145, 145, 0.1);
-            }
-            .name-title:hover {
-                color: #e2e2c7;
-                transform: scale(1.07);
-            }
-            .menu-text,
-            .menu-text-final {
-                text-decoration: none;
-                font-size: .9rem;
                 color: #2d4c53;
-                display: inline-block;
-                transition: all 0.3s ease;
-                font-weight: 700;
-                text-shadow: 2px 2px 4px rgba(146, 145, 145, 0.1);
+                transition: all .25s ease;
             }
-            .menu-text-final {
-                padding-right: 70px;
+            .menu-title:hover, 
+            .single-menu-button:hover {
+                color: #a1d2cc;
             }
-            .menu-text {
-                padding-right: 1.5rem;
+            .menu-buttons {
+                display: flex;
+                gap: 25px;
             }
-            .menu-text:hover,
-            .menu-text-final:hover {
-                color: #e2e2e2c7;
-                transform: scale(1.07);
+            .hamburger,
+            .close-menu {
+                display: none;
+            }
+            /* HAMBURGUER */ 
+            .hamburger {
+                width: 30px;
+                cursor: pointer;
+            }
+            .hamburger span {
+                display: block;
+                height: 3px;
+                background-color: #2d4c53;
+                margin: 6px 0;
+                border-radius: 2px;
+            }
+            /* X BUTTON TO CLOSE MENU */
+            .close-menu {
+                font-size: 2rem;
+                cursor: pointer;
+                color: #2d4c53;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 3;
+            }
+            /* RESPONSIVE MENU */
+            @media (max-width: 768px) {
+                .menu-buttons {
+                    display: none;
+                    position: fixed;
+                    background: white;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 70%;
+                    flex-direction: column;
+                    padding: 80px 20px; /* Espacio para la X */
+                    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+                }
+                .menu-container {
+                    gap: 60px;
+                }
+                .hamburger {
+                    display: block;
+                }
+                .menu-open .close-menu {
+                    display: block;
+                }
+                .menu-open #mobile-menu {
+                    display: flex;
+                }
             }
             /* MAIN */
             #main-landing {
@@ -213,231 +258,293 @@
                 background-position: center;
                 background-size: cover;
                 height: 100vh;
-                margin-top: 77px;
+                margin-top: 76px;
             }
-            .main-text-container {
-                margin: 0;
-                padding: 10rem 10rem 0 50rem;
-                display: block;
+            .landing {
+                padding: 140px 150px 0 820px;
             }
-            .main-text-container h1 {
+            .landing h1 {
                 font-family: "Fira Sans Condensed";
                 font-weight: 500;
-                margin: 0;
                 line-height: 1.1;
                 font-size: 3rem;
                 color: #2d4c53;
-                text-shadow: 2px 2px 4px rgba(146, 145, 145, 0.7);
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                margin-bottom: 15px;
             }
-            .main-text-container p {
-                color: #2d4c53;
+            .landing p {
                 font-size: 1.1rem;
                 line-height: 1.4;
+                color: #2d4c53;
+                font-weight: 300;
+                padding-top: 0;
+                margin-top: 0;
+            }
+            .cta-land-right,
+            .cta-land-left {
+                font-size: 13px;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 6px;
+                display: inline-block;
+                transition: all .25s ease;
             }
             .cta-land-left {
-                text-decoration: none;
-                color: white;
-                display: inline-block;
-                transition: all 0.3s ease;
                 background-color: #2d4c53;
-                font-size: .9rem;
-                font-weight: 600;
-                padding: .8rem 1.2rem;
-                border-radius: 12px;
-            }
-            .cta-land-right {
-                text-decoration: none;
-                display: inline-block;
-                transition: all 0.3s ease;
-                margin-left: 2rem;
-                background-color: white;
-                color: #2d4c53;
-                font-size: .9rem;
-                font-weight: 600;
-                padding: .8rem 1.2rem;
-                border-radius: 12px;
-                border: 1px solid #2d4c53;
+                color: white;
+                padding: 10px 13px;
             }
             .cta-land-left:hover {
-                background-color: #5c96a2;
-                transform: scale(1.05);
+                background-color: #a1d2cc;
+                transform: scale(1.03);
+            }
+            .cta-land-right {
+                background-color: white;
+                color: #2d4c53;
+                border: 1px solid #2d4c53;
+                padding: 9px 12px;
+                margin-left: 20px;
             }
             .cta-land-right:hover {
                 background-color: #a1d2cc;
-                transform: scale(1.05);
-                color: white;
+                transform: scale(1.03);
             }
-            /* SECTION CERTIFIED */
-            #certified {
-                background-color: white;
+            /* RESPONSIVE MAIN */
+            @media (max-width: 768px) {
+                #main-landing {
+                    height: 80vh;
+                }
+                .landing {
+                    padding: 160px 40px 0 20px;
+                }
+                .landing h1 {
+                    font-size: 1.9rem;
+                }
+                .landing p {
+                    font-size: .9rem;
+                }
+                .landing-ctas {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .cta-land-left {
+                    margin-left: 5px;
+                }
+                .cta-land-right {
+                    margin: 5px;
+                }
+            }
+            /* SPECS SECTION */
+            #specs-section {
+                padding: 60px 150px;
+                margin: 0;
+            }
+            .specs-container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                margin: 0;
-                gap: 1.87rem;
-                padding: 4rem 10rem;
+                gap: 30px;
+                align-items: center;
             }
-            #certified img {
-                width: 45px;
+            .specs-icon {
+                width: 40px;
             }
-            #certified h2 {
+            .specs-single {
+                border: 1px solid #e5e7dd;
+                border-radius: 12px;
+                padding: 15px 20px;
+            }
+            .specs-single h2 {
                 font-family: "Fira Sans Condensed";
-                font-size: 1.1rem;
+                font-size: 18px;
                 font-weight: 400;
-                padding-top: .5rem;
+                padding-top: 10px;
                 padding-bottom: 0;
                 margin: 0;
             }
-            #certified p {
-                font-size: .9rem;
-                color: #2d4c53;
+            .specs-single p {
+                font-size: 14px;
                 padding-top: 0;
-                margin-top: .4rem;
+                margin-top: 10px;
+                line-height: 1.3;
+                color: #2d4c53;
             }
-            .certified-box {
-                border: 1px solid #e5e7dd;
-                border-radius: 12px;
-                padding: 1rem 1.2rem 0 1.2rem;
-                box-sizing: content-box;
+            /* RESPONSIVE SPECS */
+            @media (max-width: 768px) {
+                #specs-section {
+                    padding: 10px 0;
+                }
+                .specs-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 15px 0;
+                }
             }
             /* SERVICES SECTION */
             #services {
                 background-color: #fcfaed;
-                margin: 0;
-                padding: 0;
-            }
-            #services h3 {
-                text-align: center;
-                font-family: "Fira Sans Condensed";
-                font-size: 2rem;
-                color: #2d4c53;
-                margin: 0;
-                padding: 3.2rem 0 0 0;
-            }
-            .services-subtitle {
-                font-size: 1rem;
-                margin: 0;
-                padding-top: .5rem;
-                text-align: center;
-                color: #2d4c53;
+                padding: 10px 150px 60px 150px;
             }
             .services-container {
-                margin: 0;
-                padding: 3rem 10rem;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                gap: 1.87rem;
+                gap: 30px;
             }
-            .service {
+            .service-icon {
+                width: 40px;
+            }
+            .single-service {
                 background-color: white;
-                border-radius: 15px;
-                padding: 1rem;
-                display: inline-block;
-                border: 1px solid #e5e7dd;
-                transition: all 0.3s ease;
-            }
-            .service:hover {
-                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-            }
-            .service p {
-                font-size: .9rem;
-                color: #2d4c53;
-            }
-            .service h2 {
-                font-family: "Fira Sans Condensed";
-                font-size: 1.1rem;
-                font-weight: 400;
-                padding-top: .1rem;
-                margin-top: 0;
-            }
-            #services img {
-                width: 45px;
-            }
-            #services h2 {
-                font-family: "Fira Sans Condensed";
-                font-weight: 500;
-                margin: 0;
-                padding-top: .9rem;
-            }
-            #services a {
-                text-decoration: none;
-                color: #2d4c53;
-                margin-left: 41rem;
-                padding: .6rem 1.1rem;
                 border-radius: 12px;
-                border: 1px solid #2d4c53;
-                display: inline-block;
-                transition: all .3s ease;
-                font-size: .9rem;
-                font-weight: 700;
-                margin-bottom: 3rem;
+                padding: 15px 20px;
+                border: 1px solid #e5e7dd;
+                transition: all .25s ease;
             }
-            #services a:hover {
-                background-color: #a1d2cc;
-                transform: scale(1.07);
+            .single-service:hover {
+                box-shadow: 2px 2px 4px rgba(136, 130, 130, 0.9);
+            }
+            .single-service h2 {
+                font-family: "Fira Sans Condensed";
+                font-size: 18px;
+                font-weight: 400;
+                padding-top: 10px;
+                padding-bottom: 0;
+                margin: 0;
+            }
+            .single-service p {
+                font-size: 14px;
+                padding-top: 0;
+                margin-top: 10px;
+                line-height: 1.3;
+                color: #2d4c53;
+            }
+            .services-title {
                 text-align: center;
-                color: white;
+                font-family: "Fira Sans Condensed";
+                color: #2d4c53;
+                margin: 0;
+                padding: 40px 0 0 0;
+                font-size: 30px;
             }
-            /* SECTION ABOUT ME */
-            #about {
+            .services-subtitle {
+                text-align: center;
+                color: #2d4c53;
+                margin: 0;
+                padding: 10px 0 40px 0;
+                font-family: "Fira Sans Condensed";
+            }
+            .services-button {
+                text-decoration: none;
+                border: 1px solid #2d4c53;
+                margin: 45px 510px 10px 510px;
+                padding: 9px 12px;
+                color: #2d4c53;
+                font-size: 13px;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 6px;
+                display: inline-block;
+                transition: all .25s ease;
+            }
+            .services-button:hover {
+                background-color: #a1d2cc;
+                transform: scale(1.03);
+            }
+            /* RESPONSIVE SERVICES */
+            @media (max-width: 768px) {
+                #services {
+                    padding: 10px 0;
+                }
+                .services-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 15px 0;
+                }
+                .services-button {
+                    margin: 5px 10px;
+                }
+            }
+            /* ABOUT SECTION */
+            .about-container {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                padding: 5rem 12rem;
-                gap: 6rem;
+                padding: 70px 250px;
+                gap: 100px;
             }
-            #about p {
+            .about-text {
                 color: #2d4c53;
-                text-align: justify;
+                font-size: 15px;
             }
-            #about a {
+            .title-about {
+                font-weight: 450;
+                font-size: 18px;
+            }
+            .about-image img {
+                width: 350px;
+                border-radius: 12px;
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)
+            }
+            .about-cta {
                 text-decoration: none;
-                padding: .5rem .9rem;
+                font-size: 14px;
+                font-weight: bold;
+                color: #2d4c53;
                 background-color: #fcfaed;
                 border: 1px solid #2d4c53;
-                border-radius: 12px;
+                border-radius: 6px;
+                padding: 7px 18px;
                 display: inline-block;
-                transition: all .3s ease;
-                font-size: .9rem;
-                font-weight: 700;
-                color: #2d4c53;
-                margin-top: 1.3rem;
+                transition: all .25s ease;
             }
-            #about a:hover {
-                transform: scale(1.07);
+            .about-text a {
+                margin-top: 15px;
+            }
+            .about-cta:hover {
                 background-color: #a1d2cc;
-                color: white;
+                transform: scale(1.03);
             }
-            .about-img img {
-                width: 25rem;
-                border-radius: 15px;
+            /* RESPONSIVE ABOUT */
+            @media (max-width: 768px) {
+                #about {
+                    margin: 0;
+                }
+                .about-container {
+                    padding: 10px;
+                    display: block;
+                }
+                .about-image img {
+                    margin-top: 10px;
+                    width: 350px;
+                    
+                }
             }
-
-            /* FINAL SECTION */
+            /* SECTION FINAL CTA */
             #final {
                 background-color: #2d4c53;
-                text-align: center;
-                padding: 3rem 0;
-            }
-            #final p {
                 color: white;
-                padding-bottom: 1rem;
+                text-align: center;
+                align-content: center;
+                height: 200px;
+                font-size: 16px;
             }
-            #final a {
-                background-color: white;
+            .final-cta {
                 color: #2d4c53;
-                border: 1px solid #2d4c53;
-                border-radius: 12px;
-                padding: .5rem .9rem;
                 text-decoration: none;
-                font-size: .9rem;
-                font-weight: 700;
-                transition: all .3s ease;
+                font-family: "Libre Franklin";
+                font-size: 13px;
+                font-weight: bold;
+                background-color: white;
+                margin-top: 10px;
+                padding: 7px 18px;
+                border-radius: 6px;
                 display: inline-block;
+                transition: all 0.25s ease;
             }
-            #final a:hover {
-                transform: scale(1.07);
+            .final-cta:hover {
                 background-color: #e5e7dd;
+                transform: scale(1.03);
             }
             /* FOOTER SECTION */
             #footer {
@@ -490,6 +597,54 @@
                 text-align: center;
                 margin-top: 1.3rem;
             }
+            /* FOOTER RESPONSIVE */
+            @media (max-width: 768px) {
+                #footer {
+                    margin: 0;
+                    padding: 10px;
+                }
+                .flex-footer {
+                    display: block;
+                    justify-content: space-between;
+                }
+            }
+            /* BOTÓN DE WHATSAPP */
+            #whatsapp a {
+                background: none;
+                position: fixed;
+                top: 85%;
+                right: 1%;
+            }
+            .whatsapp-icon {
+                height: 50px;
+                width: 50px;
+                z-index: 10;
+            }
         </style>
+
+
+
+        <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        hamburger.addEventListener("click", () => {
+            document.body.classList.add("menu-open");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            document.body.classList.remove("menu-open");
+        });
+
+        // Cerrar menú tocando fuera del contenido (opcional)
+        mobileMenu.addEventListener("click", (e) => {
+            if (e.target === mobileMenu) {
+                document.body.classList.remove("menu-open");
+            }
+        });
+        </script>
+
+
     </body>
 </html>
